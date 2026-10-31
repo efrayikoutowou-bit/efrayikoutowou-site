@@ -28,7 +28,7 @@ jobs:
       - name: Generate sitemap
         shell: bash
         run: |
-          site_url="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
+          site_url="https://efrayim1212.com/"
           printf '%s\n' '<?xml version="1.0" encoding="UTF-8"?>' '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' "  <url><loc>${site_url}</loc></url>" '</urlset>' > sitemap.xml
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
